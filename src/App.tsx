@@ -13,7 +13,6 @@ const App: React.FC = () => {
       <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
         IITM BS DS Grade Calculator
       </h1>
-      <p className="text-sm text-gray-400 mt-2">Made by <a href="https://www.instagram.com/dipux94/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">@dipuX94</a></p>
     </header>
   );
 
