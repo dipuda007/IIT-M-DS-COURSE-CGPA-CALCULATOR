@@ -1,6 +1,6 @@
 
 {
-  "name": "IITM BSS DS Grade Calculator",
+  "name": "IITM BS DS Grade Calculator",
   "description": "A comprehensive tool to calculate your CGPA and determine the end-term exam scores needed to achieve specific grades for the IITM BS in Data Science program.",
   "requestFramePermissions": []
 }
