@@ -13,6 +13,14 @@ const App: React.FC = () => {
       <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
         IITM DS Grade Calculator
       </h1>
+      {/* Download button added below */}
+      <a
+        href="https://github.com/dipuda007/IIT-M-DS-COURSE-CGPA-CALCULATOR/releases/download/v1.0.0/CGPA-CALC.apk"
+        download
+        className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mt-4 transition duration-300"
+      >
+        Download Android App (APK)
+      </a>
     </header>
   );
 
