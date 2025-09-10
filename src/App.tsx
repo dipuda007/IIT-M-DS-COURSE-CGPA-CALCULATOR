@@ -53,7 +53,7 @@ const App: React.FC = () => {
       </div>
        <footer className="text-center py-4 mt-8 text-gray-500 text-sm">
             <p>Disclaimer: This is an unofficial tool. Formulas are based on the May 2025 Term document. Always verify with official sources.</p>
-            <p>There can always be mistakes in -0.15 to +0.15 ranges or more so don't trust blindly.</p>
+            <p>There can always be mistakes so don't trust blindly.</p>
         </footer>
     </div>
   );
