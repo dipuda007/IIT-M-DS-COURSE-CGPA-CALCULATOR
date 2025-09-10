@@ -11,7 +11,7 @@ const App: React.FC = () => {
   const header = (
     <header className="w-full p-4 text-center">
       <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-        IITM BS DS Grade Calculator
+        IITM DS Grade Calculator
       </h1>
     </header>
   );
