@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import CgpaCalculator from './components/CgpaCalculator';
 import GradeCalculator from './components/GradeCalculator';
@@ -9,18 +8,10 @@ const App: React.FC = () => {
   const [view, setView] = useState<CalculatorView>('grade');
 
   const header = (
-    <header className="w-full p-4 text-center">
+    <header className="w-full pt-16 pb-4 text-center">
       <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
         IITM DS Grade Calculator
       </h1>
-      {/* Download button added below */}
-      <a
-        href="https://github.com/dipuda007/IIT-M-DS-COURSE-CGPA-CALCULATOR/releases/download/v1.0.0/CGPA-CALC.apk"
-        download
-        className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mt-4 transition duration-300"
-      >
-        Download Android App (APK)
-      </a>
     </header>
   );
 
@@ -50,7 +41,18 @@ const App: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans flex flex-col items-center p-4">
+    <div className="min-h-screen bg-black text-white font-sans flex flex-col items-center p-4 relative">
+      <a
+        href="https://github.com/dipuda007/IIT-M-DS-COURSE-CGPA-CALCULATOR/releases/download/v1.0.0/CGPA-CALC.apk"
+        download
+        className="absolute top-4 right-4 flex items-center gap-2 bg-gray-900 hover:bg-gray-800 border border-gray-700 text-gray-300 font-semibold py-2 px-3 rounded-lg transition-colors duration-300 shadow-lg z-10"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download APK
+      </a>
+      
       {header}
       <div className="w-full max-w-4xl mx-auto">
         {tabs}
